@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="lottery-name">
+        <div>Generar grupos de:</div>
+        <input id="tam" type="text">
+      </div>
+      <div>Elementos: </div>
+      <small>Introduce cada elemento en una linea</small>
+      <textarea id="participants" class="participants" rows="7"></textarea>
+      <div class="raffle">
+        <button id="limpiar">Limpiar</button>
+      <button id="button">Agrupar</button>
+      </div>
+      
+      <div id="groups" class="winner">Grupos: </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
