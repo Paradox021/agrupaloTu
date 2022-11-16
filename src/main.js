@@ -14,7 +14,8 @@ function onClick(){
       const nameList = participants.value.split('\n')
       const [groups, aux] = selectRandomFromArray(nameList, tam.value)
       let msg = ""
-      if(!tam.value) msg='No estas eligiendo el tamaño'
+      
+      if(!tam.value || isNaN(tam.value) || tam.value<0) msg='No estás eligiendo un tamaño de grupo válido'
       else if(!participants.value) msg = 'No hay participantes'
       else {
         for(let i in groups){
