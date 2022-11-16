@@ -30,5 +30,5 @@ function limpiar(){
     const participants = document.getElementById('participants')
     const result = document.getElementById('groups')
     participants.value=""
-    result.innerHTML=""
+    result.innerHTML="Grupo: "
 }
